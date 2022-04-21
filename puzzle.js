@@ -82,7 +82,7 @@ function definirValor() {
 			celdas[i].style.background = 'rgb(106, 198, 184)';
 		}
 	}
-	disminuyendo(5);
+	disminuyendo(300);
 }
 definirValor();
 
