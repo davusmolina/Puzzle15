@@ -1,0 +1,119 @@
+:root {
+	--background-otros: #57407c;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: 'Pacifico', cursive;
+	color: white;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	height: 100vh;
+	width: 100vw;
+
+	background: radial-gradient(circle, #57407c 0%, rgb(245, 46, 238) 100%);
+}
+h1 {
+	font-size: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: var(--background-otros);
+	width: 350px;
+	border-radius: 5px;
+	text-shadow: 11px 14px 4px #0000006e;
+}
+.principal {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 10px;
+	padding: 10px;
+
+	border-radius: 5%;
+}
+
+.principal div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 10%;
+
+	width: 80px;
+	height: 80px;
+
+	border: 1px solid #9fb4ff;
+	border-radius: 15%;
+	background-color: rgb(106, 198, 184);
+	font-size: 6rem;
+	cursor: pointer;
+	text-shadow: 0px 0px 20px #0000006e;
+}
+
+.otros {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 350px;
+
+	text-shadow: 7px 8px 4px #0000006e;
+}
+.otros button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 60px;
+	width: 145px;
+
+	text-shadow: 7px 8px 4px #0000006e;
+	background-color: var(--background-otros);
+	font-size: 3rem;
+	font-family: 'Pacifico', cursive;
+	border: 1px solid var(--background-otros);
+	border-radius: 5px;
+	color: rgb(255, 255, 255);
+}
+.reloj-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 200px;
+	height: 60px;
+
+	background-color: var(--background-otros);
+	border: none;
+	border-radius: 5px;
+	font-size: 3rem;
+}
+.reloj-container p {
+	display: flex;
+	align-items: center;
+
+	/* text-shadow: 11px 14px 4px #0000006e; */
+	height: 100%;
+}
+.gif {
+	display: none;
+	position: absolute;
+	z-index: 5px;
+
+	width: 350px;
+	height: 350px;
+
+	object-fit: scale-down;
+}
